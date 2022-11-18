@@ -36,4 +36,18 @@ const criarConta = (event) =>{
 const form = document.getElementById('form');
 form.addEventListener('submit', criarConta);
 
+const trocaOperacao = (event)=>{
+    const valor = document.getElementById('valor');
+    if(event.target.value==='saldo'){
+        valor.disabled=true;
+    }
+    else{
+        valor.disabled=false;
+    }
+    
+}
+
+const formOperacoes = document.getElementById('operacao');
+formOperacoes.addEventListener('change', trocaOperacao);
+
 

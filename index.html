@@ -14,24 +14,49 @@
         <span class='g'>G</span><span class='bank'>-Bank</span>
     </header>
     <main>
-        <form id="form">
-            <div>
-                <label>Nome</label>
-                <input type="text" id="nome" required>
-                <label>CPF</label>
-                <input type="text" id="cpf" required>
-                <label>Celular</label>
-                <input type="tel" id="celular" required>
-                <label>Senha</label>
-                <input type="text" id="senha" required>
-                <label>Confirmação de senha</label>
-                <input type="text" id="confirmasenha" required>
-            </div>
-            <div class="botoes">
-                <button type="submit" id="send">Enviar</button>
-                <button type="reset">Apagar</button>
-            </div>
-        </form>
+        <section>
+            <form id="form">
+                <div>
+                    <label>Nome</label>
+                    <input type="text" id="nome" required>
+                    <label>CPF</label>
+                    <input type="text" id="cpf" required>
+                    <label>Celular</label>
+                    <input type="tel" id="celular" required>
+                    <label>Senha</label>
+                    <input type="password" id="senha" required>
+                    <label>Confirmação de senha</label>
+                    <input type="password" id="confirmasenha" required>
+                </div>
+                <div class="botoes">
+                    <button type="submit" id="send">Enviar</button>
+                    <button type="reset">Apagar</button>
+                </div>
+            </form>
+        </section>
+        <section>
+            <form id="operacoes">
+                <div>
+                    <select  id="operacao">
+                        <option value="saque" selected>Saque</option>
+                        <option value="deposito">Depósito</option>
+                        <option value="saldo">Consulta Saldo</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Valor</label>
+                    <input type="text" id="valor" required>
+                    <label>Conta</label>
+                    <input type="text" id="conta" required>
+                    <label>Senha</label>
+                    <input type="password" id="senhacadastrada" required>
+                </div>
+                <div>
+                    <button type="submit" id="send">Enviar</button>
+                    <button type="reset">Apagar</button>
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <h2>Siga-nos nas redes sociais</h2>
